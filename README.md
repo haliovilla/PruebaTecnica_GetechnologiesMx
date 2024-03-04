@@ -2,9 +2,9 @@
 
 ---
 
-## Insturcciones
+## INSTRUCCIONES
 
-Para ejecutar el proyecto, es necesario habilitar el inicio mûltiple y seleccionar los siguientes proyectos:
+Para ejecutar el proyecto, es necesario habilitar el **Inicio Mûltiple** y seleccionar los siguientes proyectos:
 
 - API
 - WPF
