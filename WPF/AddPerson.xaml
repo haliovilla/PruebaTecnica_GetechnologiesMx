@@ -1,0 +1,116 @@
+﻿<Window x:Class="WPF.AddPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Agregar Persona" Height="450" Width="600"
+        WindowStartupLocation="CenterScreen">
+
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- header -->
+        <Border Grid.ColumnSpan="2"
+             BorderBrush="LightGray" BorderThickness="5">
+            <TextBlock FontSize="36"
+HorizontalAlignment="Center" VerticalAlignment="Center"
+Text="Agregar Persona"/>
+        </Border>
+
+        <!-- First name -->
+        <Label Grid.Row="1" Grid.Column="0"
+                Content="Primer Nombre"
+                HorizontalAlignment="Left" VerticalAlignment="Center"
+                Margin="10,10,0,0"/>
+
+        <TextBox Grid.Row="1" Grid.Column="1"
+            x:Name="firstName"
+                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Margin="10,35,0,0"
+                TextWrapping="Wrap"/>
+
+        <!-- Paternal lastname -->
+        <Label Grid.Row="2" Grid.Column="0"
+        Content="Apellido Paterno"
+        HorizontalAlignment="Left" VerticalAlignment="Center"
+        Margin="10,10,0,0"/>
+
+        <TextBox Grid.Row="2" Grid.Column="1"
+    x:Name="paternalLastname"
+         HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+        Margin="10,35,0,0"
+                 MaxLength="50"
+        TextWrapping="Wrap"/>
+        
+        <!-- Maternal lastname -->
+        <Label Grid.Row="3" Grid.Column="0"
+               Content="Apellido Materno"
+               HorizontalAlignment="Left" VerticalAlignment="Center"
+               Margin="10,10,0,0"/>
+
+        <TextBox Grid.Row="3" Grid.Column="1"
+                 x:Name="maternalLastname"
+                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                 Margin="10,35,0,0"
+                 MaxLength="50"
+                 TextWrapping="Wrap"/>
+
+        <!-- Identification -->
+        <Label Grid.Row="4" Grid.Column="0"
+        Content="Identificación"
+        HorizontalAlignment="Left" VerticalAlignment="Center"
+        Margin="10,10,0,0"/>
+
+        <TextBox Grid.Row="4" Grid.Column="1"
+    x:Name="identification"
+         HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+        Margin="10,35,0,0"
+                 MaxLength="50"
+        TextWrapping="Wrap"/>
+        
+        <!-- buttons -->
+        <Border Grid.Row="5"
+                Grid.ColumnSpan="2"
+             BorderBrush="LightGray" BorderThickness="5">
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right" VerticalAlignment="Center"
+                    Margin="10,10,10,10">
+                <Button x:Name="saveButton"
+                        Content="Guardar"
+                        Width="100"
+                        Height="30"
+                        Margin="10,10,10,10"
+                        Click="saveButton_Click"/>
+                <Button x:Name="cancelButton"
+                        Content="Cancelar"
+                        Width="100"
+                        Height="30"
+                        Margin="10,10,10,10"
+                        Click="cancelButton_Click"/>
+            </StackPanel>
+
+        </Border>
+
+        <ProgressBar x:Name="loader" 
+                     Grid.RowSpan="6" Grid.ColumnSpan="2"
+             IsIndeterminate="True" 
+             Visibility="Collapsed"/>
+
+    </Grid>
+</Window>
