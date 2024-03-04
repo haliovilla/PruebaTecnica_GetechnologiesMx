@@ -48,7 +48,7 @@ namespace DAC
             }
         }
 
-        private static List<Person> GeneratePeopleList(int qty = 5)
+        private static List<Person> GeneratePeopleList(int qty = 50)
         {
             var result = new List<Person>();
 

@@ -16,10 +16,9 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Border Padding="50" Height="200">
-            <TextBlock FontSize="40"
-                   FontWeight="Bold" Margin="25"
+            <TextBlock FontSize="18"
 HorizontalAlignment="Center" VerticalAlignment="Center"
-Text="Seleccione una persona para mostrar más información..."/>
+Text="Seleccione una persona..."/>
         </Border>
     </Grid>
 </Page>

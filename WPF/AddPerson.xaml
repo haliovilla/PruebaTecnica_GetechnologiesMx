@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="Agregar Persona" Height="450" Width="600"
+        Title="Agregar Persona" Height="325" Width="500"
         WindowStartupLocation="CenterScreen">
 
 
@@ -28,7 +28,7 @@
         <!-- header -->
         <Border Grid.ColumnSpan="2"
              BorderBrush="LightGray" BorderThickness="5">
-            <TextBlock FontSize="36"
+            <TextBlock FontSize="24"
 HorizontalAlignment="Center" VerticalAlignment="Center"
 Text="Agregar Persona"/>
         </Border>
@@ -36,51 +36,51 @@ Text="Agregar Persona"/>
         <!-- First name -->
         <Label Grid.Row="1" Grid.Column="0"
                 Content="Primer Nombre"
-                HorizontalAlignment="Left" VerticalAlignment="Center"
-                Margin="10,10,0,0"/>
+                HorizontalAlignment="Right" VerticalAlignment="Center"
+                Margin="10,10,5,5"/>
 
         <TextBox Grid.Row="1" Grid.Column="1"
             x:Name="firstName"
-                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                Margin="10,35,0,0"
+                 HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                Margin="10,10,5,5"
                 TextWrapping="Wrap"/>
 
         <!-- Paternal lastname -->
         <Label Grid.Row="2" Grid.Column="0"
         Content="Apellido Paterno"
-        HorizontalAlignment="Left" VerticalAlignment="Center"
-        Margin="10,10,0,0"/>
+        HorizontalAlignment="Right" VerticalAlignment="Center"
+        Margin="10,10,5,5"/>
 
         <TextBox Grid.Row="2" Grid.Column="1"
     x:Name="paternalLastname"
-         HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-        Margin="10,35,0,0"
+         HorizontalAlignment="Stretch" VerticalAlignment="Center"
+        Margin="10,10,5,5"
                  MaxLength="50"
         TextWrapping="Wrap"/>
         
         <!-- Maternal lastname -->
         <Label Grid.Row="3" Grid.Column="0"
                Content="Apellido Materno"
-               HorizontalAlignment="Left" VerticalAlignment="Center"
-               Margin="10,10,0,0"/>
+               HorizontalAlignment="Right" VerticalAlignment="Center"
+               Margin="10,10,5,5"/>
 
         <TextBox Grid.Row="3" Grid.Column="1"
                  x:Name="maternalLastname"
-                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                 Margin="10,35,0,0"
+                 HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                 Margin="10,10,5,5"
                  MaxLength="50"
                  TextWrapping="Wrap"/>
 
         <!-- Identification -->
         <Label Grid.Row="4" Grid.Column="0"
         Content="Identificación"
-        HorizontalAlignment="Left" VerticalAlignment="Center"
-        Margin="10,10,0,0"/>
+        HorizontalAlignment="Right" VerticalAlignment="Center"
+        Margin="10,10,5,5"/>
 
         <TextBox Grid.Row="4" Grid.Column="1"
     x:Name="identification"
-         HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-        Margin="10,35,0,0"
+         HorizontalAlignment="Stretch" VerticalAlignment="Center"
+        Margin="10,10,5,5"
                  MaxLength="50"
         TextWrapping="Wrap"/>
         

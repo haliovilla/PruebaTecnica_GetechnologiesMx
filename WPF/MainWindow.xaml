@@ -15,8 +15,8 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*"/>
-            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
 
         <ProgressBar x:Name="loader"
@@ -28,13 +28,13 @@
                 BorderBrush="LightGray" BorderThickness="5">
             <TextBlock FontSize="36"
    HorizontalAlignment="Center" VerticalAlignment="Center"
-   Text="Personas"/>
+   Text="Directorio"/>
         </Border>
 
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="90*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="85*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -60,9 +60,8 @@ Click="deletePersonButton_Click"/>
 
             <ListView Grid.Row="1"
                     x:Name="peopleListView" 
-                      Height="400"
                   HorizontalAlignment="Stretch" 
-                      VerticalAlignment="Top"
+                      VerticalAlignment="Stretch"
 SelectionChanged="peopleListView_SelectionChanged"
                           Margin="10">
                 <ListView.View>

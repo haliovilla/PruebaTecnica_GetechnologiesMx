@@ -11,13 +11,14 @@
     <Grid>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="15*"/>
         </Grid.RowDefinitions>
 
-        <Border BorderBrush="LightGray" BorderThickness="5">
-            <TextBlock FontSize="36"
+        <Border Grid.Row="0"
+            BorderBrush="LightGray" BorderThickness="1">
+            <TextBlock FontSize="18"
 HorizontalAlignment="Center" VerticalAlignment="Center"
 Text="{Binding Fullname}"/>
         </Border>
@@ -36,16 +37,13 @@ SelectionChanged="invoicesListView_SelectionChanged"
             </ListView.View>
         </ListView>
 
-        <StackPanel Orientation="Horizontal"
-        HorizontalAlignment="Right" VerticalAlignment="Center"
-        Margin="10,10,10,10">
-            <Button x:Name="addSaleButton"
-            Content="Agregar Venta"
-            Width="100"
-            Height="30"
-            Margin="10,10,10,10"
-            Click="addSaleButton_Click"/>
-        </StackPanel>
+        <Button Grid.Row="2"
+            x:Name="addSaleButton"
+Content="Agregar Venta"
+Width="100"
+Height="30"
+Margin="10,10,10,10"
+Click="addSaleButton_Click"/>
 
     </Grid>
 </Page>
